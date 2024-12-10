@@ -9,9 +9,11 @@ function Fondo() {
 
     return (
         <div>
+            
             <div className="fondobox">
+                <div className='gradient'></div>
                 <Section1></Section1>
-                <img className="fondoimg" src="src\imagenes\fondo1.jpg" alt="" />
+                <img className="fondoimg" src="src\imagenes\fondo1.png" alt="" />
             </div>
             <div className="fondobox">
                 <Section2></Section2>

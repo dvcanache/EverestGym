@@ -2,14 +2,7 @@ import './NavBar.css'
 
 const NavBar = () => {
 
-    return ( <nav style={{
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        padding: '20px 40px',
-        backgroundColor: 'black',
-        color: 'white',
-      }}>
+    return ( <nav className='navstyle'>
         {/* Logo */}
         <div className='logocont'><img className='imagen' src="src\imagenes\everest.png" alt="" /></div>
   
@@ -20,10 +13,10 @@ const NavBar = () => {
             <a href='http://youtube.com'>Inicio</a>
           </li>
           <li>
-            <a>Planes</a>
+            <a href='https://www.instagram.com/everest__training/?hl=es'>Planes</a>
           </li>
           <li>
-            <a>Contacto</a>
+            <a href='https://www.instagram.com/everest__training/?hl=es'>Contacto</a>
           </li>
         </ul>
   
