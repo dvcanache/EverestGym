@@ -16,8 +16,9 @@ function Fondo() {
                 <Section1></Section1>
                 <img className="fondoimg" src="src\imagenes\fondo1.png" alt="" />
             </div>
-            <div className="fondobox">
+            <div className="fondobox descripcion">
                 <Section2></Section2>
+                <img className="fondoimg"  alt="" />
             </div>
             <div className="fondobox">
                 <Section3></Section3>

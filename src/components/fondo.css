@@ -11,6 +11,13 @@
     position: relative;
     /* box-shadow: 10px 10px 100px 50px rgb(255, 242, 55); */
 }
+
+.fondobox.descripcion{
+    background-image: url('src/imagenes/fondo12.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .fondoimg{
     opacity: 100%;
     width: 100%;

@@ -1,13 +1,11 @@
 import './section.css'
 
 
-function Section3() {
-
+function Section3(){
+    
     return (
-
-        <div className="section3">
-            seccion3
-        </div>
+        <div>Section 4</div>
     )
 }
-export default Section3
+  
+  export default Section3;
