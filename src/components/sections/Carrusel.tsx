@@ -1,56 +1,60 @@
-import React, { useState } from 'react';
-import background from './gianpiero.jpg';
+import React, { useState } from "react";
+import "./carrusel.css";
+import image from "../../imagenes/fondo11.jpg";
 
-type CarouselProps = {
-  items: string[]; // Puedes ajustar el tipo según lo que desees mostrar (imágenes, texto, etc.)
-};
-
-const Carousel: React.FC<CarouselProps> = ({ items }) => {
+const ImageCarousel: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  const images = [
+     image,
+    "https://via.placeholder.com/800x400?text=Image+2",
+    "https://via.placeholder.com/800x400?text=Image+3",
+  ];
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
 
   const handlePrev = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? items.length - 1 : prevIndex - 1
-    );
-  };
-
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === items.length - 1 ? 0 : prevIndex + 1
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
     );
   };
 
   return (
-    <div style={{ width: '300px', overflow: 'hidden',marginLeft: '700px',marginTop: '-250px'}}>
-      <div
-        style={{
-          display: 'flex',
-          transform: `translateX(-${currentIndex * 100}%)`,
-          transition: 'transform 0.3s ease-in-out',
-        }}
+    <div className="carousel-container">
+      <div>
+        <img
+          src={images[currentIndex]}
+          alt={`Slide ${currentIndex}`}
+          className="carousel-image"
+        />
+      </div>
+      <button
+        onClick={handlePrev}
+        className="carousel-button left"
       >
-        {items.map((item, index) => (
-          <div
+        {"<"}
+      </button>
+      <button
+        onClick={handleNext}
+        className="carousel-button right"
+      >
+        {">"}
+      </button>
+      <div className="carousel-indicators">
+        {images.map((_, index) => (
+          <span
             key={index}
-            style={{
-              minWidth: '100%',
-              height: '200px',
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-              background: 'black',
-              backgroundImage: 'url($background)',
-            }}
+            onClick={() => setCurrentIndex(index)}
+            className={currentIndex === index ? "active" : ""}
           >
-            {item}
-          </div>
+            ●
+          </span>
         ))}
       </div>
-      <button onClick={handlePrev}>Prev</button>
-      <button onClick={handleNext}>Next</button>
     </div>
   );
 };
 
-export default Carousel;
-
+export default ImageCarousel;

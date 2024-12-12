@@ -1,5 +1,5 @@
-import Carrusel from './Carrusel'
-import './section.css'
+import Carrusel from "./Carrusel";
+import './carrusel.css'
 import { TbKarate } from "react-icons/tb";
 import { FaRunning } from "react-icons/fa";
 import { FaDumbbell } from "react-icons/fa";
@@ -7,8 +7,7 @@ import { FaBaseballBatBall } from "react-icons/fa6";
 
 
 function Section2() {
-  const items = ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5'];
-
+  
 
     return (
         <div className='section2'>
@@ -23,9 +22,10 @@ function Section2() {
         <li><FaRunning/> Area de Crossfit</li>
         <li><TbKarate/> Area de MMA</li>
         <li><FaBaseballBatBall/>Area de Beisbol</li>
-        <Carrusel items={items} />
       </ul>
-
+      <div>
+      <Carrusel/>
+      </div>
       <div>
       </div>
         </div>
