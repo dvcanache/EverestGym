@@ -5,58 +5,32 @@ function Section5() {
 
     return (
 
-        <div className = "section5" >
+        <div className = "formulario" >
             
-            <div className = 'rejilla'>
-                <div className = "section5 text">
-                        <div className='testimonio-pic'> 
-                            <img className='testimonio-pic pic' src="src\imagenes\person-circle.png" alt="" />
-                        </div>
-                    <div>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quis error consequatur, dicta dignissimos debitis?
+            <div className='formulario-title'>Contactanos !</div>
+            <div className='formulario-container'>
+                <div className='formulario-text'>
+                <form action="#" method="POST">
+                    <div className="form-group">
+                        <label form="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required/>
                     </div>
+                    <div className="form-group">
+                        <label form="email">Gmail:</label>
+                        <input type="email" id="email" name="email" required/>
+                    </div>
+                    <div className="form-group">
+                        <label form="telefono">Número de Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" required/>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+
                 </div>
-                <div className = "section5 text">
-                    <div className='testimonio-pic'>
-                        <img className='testimonio-pic pic' src="src\imagenes\person-circle.png" alt="" />
-                    </div>
-                    <div>
-                        Lorem ipsum dolor sit adipisicing elit. Iure quis error consequatur, dicta dignissimos debitis?
-                    </div>
-                </div>
-                <div className = "section5 text">
-                    <div className='testimonio-pic'>
-                        <img className='testimonio-pic pic' src="src\imagenes\person-circle.png" alt="" />
-                    </div>
-                    <div>
-                        Lorem ipsum dolor sit adipisicing elit. Iure quis error consequatur, dicta dignissimos debitis?
-                    </div>
-                </div>
-                <div className = "section5 text">
-                    <div className='testimonio-pic'>
-                        <img className='testimonio-pic pic' src="src\imagenes\person-circle.png" alt="" />
-                    </div>
-                    <div>
-                        Lorem ipsum dolor sit adipisicing elit. Iure quis error consequatur, dicta dignissimos debitis?
-                    </div>
-                </div>
-                <div className = "section5 text">
-                    <div className='testimonio-pic'>
-                        <img className='testimonio-pic pic' src="src\imagenes\person-circle.png" alt="" />
-                    </div>
-                    <div>
-                        Lorem ipsum dolor sit adipisicing elit. Iure quis error consequatur, dicta dignissimos debitis?
-                    </div>
-                </div>
-                <div className = "section5 text">
-                    <div className='testimonio-pic'>
-                        <img className='testimonio-pic pic' src="src\imagenes\person-circle.png" alt="" />
-                    </div>
-                    <div>
-                        Lorem ipsum dolor sit adipisicing elit. Iure quis error consequatur, dicta dignissimos debitis?
-                    </div>
-                </div>
+                <div className='formulario-text'></div>
+                
             </div>
+            
             
             
         </div>
