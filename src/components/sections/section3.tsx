@@ -4,7 +4,10 @@ import './section.css'
 function Section3(){
     
     return (
-        <div>Section 3</div>
+        <div className="section3">
+            seccion3
+            
+        </div>
     )
 }
   
