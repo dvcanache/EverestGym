@@ -7,6 +7,7 @@ function Section3() {
 
         <div className="section3">
             seccion3
+            
         </div>
     )
 }
