@@ -1,0 +1,33 @@
+.footerr{
+    height: 100%;
+    width: 100%;
+    /* margin-top: 50px; */
+    text-align: left;
+    font-family: "Montserrat", Sans-serif;
+    display: flex;
+    padding: 100px;
+    position: absolute;
+    
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(255, 255, 255);
+    /* font-size: 50px; */
+
+}
+.container {
+    
+    justify-content: space-between;
+}
+.col{
+    padding-top: 20px;
+    border-top: solid 1px rgb(255, 255, 0);
+
+
+
+
+}
+.col.everest-logo {
+    padding-top: 0;
+    text-align: center;
+    border-top: solid 0px rgb(255, 255, 0);
+    padding-left: 0px;
+}
