@@ -3,9 +3,10 @@
 .carousel-container {
     position: relative;
     width: 500px;
-    margin-left: 600px;
-    margin-top: -350px;
+    margin-left: 700px;
+    margin-top: -330px;
     border-radius: 15px;
+    overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 
@@ -16,21 +17,13 @@
   }
   
   .carousel-image {
+    flex-shrink: 0;
     min-width: 100%;
     max-width: 100%;
     height: auto;
     border-radius: 15px;
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-  }
-  
-  .carousel-button {
-    position: absolute;
-    top: 50%;
-    background: none;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-    transform: translateY(-50%);
+    object-fit: cover;
   }
   
   .carousel-button.left {
