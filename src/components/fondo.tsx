@@ -25,9 +25,11 @@ function Fondo() {
             </div>
             <div className="fondobox">
                 <Section4></Section4>
+                <img className="fondoimg cinco" src="src\imagenes\fondo6.png" alt="" />
             </div>
-            <div className="fondobox">
+            <div className="fondobox formulario">
                 <Section5></Section5>
+                               
             </div>
         </div>
     )
