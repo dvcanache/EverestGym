@@ -18,6 +18,11 @@ ul{
 
 li {
     margin: 0 50px;
+    transition: transform 0.5s ease;
+}
+
+li:hover {
+    transform: scale(1.2);
 }
 
 a {
@@ -31,8 +36,7 @@ a {
 }
 
 a:hover {
-    color: #e5ff00;
-    transition: color 0.5s ease, transform 0.5s ease;
+    color: #fff017;
     transform: scale(1.2);
     opacity: 0.8;
 }
@@ -50,11 +54,13 @@ button{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: #000000;
+    transition: transform 0.3s ease-in-out;
 
 }
 button:hover {
 
     background-image: linear-gradient(to right, #555919, #94a64f);
+    transform: scale(1.2);
 }
 
 .navstyle{

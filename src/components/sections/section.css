@@ -156,10 +156,28 @@
     height: 80%;
     padding: 110px;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.397);
+    background-color: rgba(0, 0, 0, 0.575);
     color: rgb(255, 255, 255);
-    font-size: 100px;
-} 
+    font-size: 300px;
+}
+
+.title{
+    font-family: 'montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    margin-top: -200px;
+    font-size: 70px;
+    margin-left: 400px;
+}
+
+.parrafo{
+    font-family: 'montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    text-align: end;
+    position: absolute;
+    text-align: justify;
+}
 
 .formulario{
     text-align: left;

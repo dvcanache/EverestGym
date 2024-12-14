@@ -1,4 +1,4 @@
-import Carrusel from "./Carrusel";
+import Carrusel from "./carrusel";
 import './carrusel.css'
 import { TbKarate } from "react-icons/tb";
 import { FaRunning } from "react-icons/fa";

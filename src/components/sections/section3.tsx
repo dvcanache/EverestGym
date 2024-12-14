@@ -1,14 +1,16 @@
-import './section.css'
+import Carrusel2 from './Carrusel2';
+import './Carrusel2.css';
 
+function Section3() {
 
-function Section3(){
-    
-    return (
-        <div className="section3">
-            seccion3
-            
-        </div>
-    )
+  return (
+    <div>
+      <h1 className="title">Encuentra tu Plan Ideal</h1>
+      <p className="parrafo">
+      </p>
+      <Carrusel2/>
+    </div>
+  );
 }
-  
-  export default Section3;
+
+export default Section3;
