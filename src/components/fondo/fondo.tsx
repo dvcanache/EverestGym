@@ -1,10 +1,11 @@
 
 import './fondo.css'
-import Section1 from './sections/section1'
-import Section2 from './sections/section2'
-import Section3 from './sections/section3'
-import Section4 from './sections/section4'
-import Section5 from './sections/section5'
+import Footer from '../footer/footer'
+import Section1 from '../sections/section1'
+import Section2 from '../sections/section2'
+import Section3 from '../sections/section3'
+import Section4 from '../sections/section4'
+import Section5 from '../sections/section5'
 function Fondo() {
 
     return (
@@ -18,7 +19,7 @@ function Fondo() {
             </div>
             <div className="fondobox descripcion">
                 <Section2></Section2>
-                <img className="fondoimg"  alt="" />
+                
             </div>
             <div className="fondobox">
                 <Section3></Section3>
@@ -28,9 +29,12 @@ function Fondo() {
                 <img className="fondoimg cinco" src="src\imagenes\fondo6.png" alt="" />
             </div>
             <div className="fondobox formulario">
-                <Section5></Section5>
-                               
+                <Section5></Section5>    
             </div>
+            <div className="fondobox footer">
+                <Footer></Footer>
+            </div>
+             
         </div>
     )
 }

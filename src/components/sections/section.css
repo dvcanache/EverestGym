@@ -173,11 +173,8 @@
 .parrafo{
     font-family: 'montserrat', sans-serif;
     color: rgb(255, 255, 255);
-    font-size: 50px;
-    text-align: end;
-    position: absolute;
-    text-align: justify;
-}
+    font-size: 100px;
+} 
 
 .formulario{
     text-align: left;
@@ -186,7 +183,7 @@
     height: 80%;
     padding: 110px;
     padding-top: 30px;
-    position: absolute;
+    position: relative;
     background-color: rgba(0, 0, 0, 0.397);
     color: rgb(255, 255, 255);
     /* font-size: 30px; */
@@ -321,3 +318,4 @@ input:focus {
     border-color: #d9ff00c1; /* Cambiar el color del borde al enfocar */
     outline: none; /* Eliminar el contorno por defecto */
 }
+
