@@ -162,19 +162,22 @@
 }
 
 .title{
+    position: fixed;
     font-family: 'montserrat', sans-serif;
     color: rgb(255, 255, 255);
     position: absolute;
-    margin-top: -200px;
+    margin-top: -450px;
     font-size: 70px;
-    margin-left: 400px;
+    margin-left: 450px;
 }
 
 .parrafo{
     font-family: 'montserrat', sans-serif;
     color: rgb(255, 255, 255);
-    font-size: 100px;
-} 
+    font-size: 40px;
+    margin-top: -300px;
+    margin-left: 150px;
+}
 
 .formulario{
     text-align: left;

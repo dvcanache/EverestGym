@@ -1,60 +1,66 @@
 import React from "react";
 import Slider from "react-slick";
-import "./Carrusel2.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-// Tipos para las promociones
-interface Promotion {
-  image: string;
-  title: string;
-  description: string;
-}
+// Componente de flechas personalizadas
+const CustomArrow = ({ className, onClick }: any) => {
+  return (
+    <div
+      className={className}
+      onClick={onClick}
+      style={{
+        display: "block",
+        background: "gray",
+        borderRadius: "50%",
+        width: "30px",
+        height: "30px",
+      }}
+    />
+  );
+};
 
-// Lista de promociones
-const promotions: Promotion[] = [
-  {
-    image: "https://via.placeholder.com/1200x600",
-    title: "¡50% de descuento en membresías anuales!",
-    description: "Aprovecha esta oferta por tiempo limitado.",
-  },
-  {
-    image: "https://via.placeholder.com/1200x600",
-    title: "Clases de spinning gratis los sábados",
-    description: "Inscríbete y prueba nuestras clases gratuitas.",
-  },
-  {
-    image: "https://via.placeholder.com/1200x600",
-    title: "Nuevo horario para yoga",
-    description: "Disfruta de yoga a las 7 PM todos los días.",
-  },
-];
-
-const Carousel: React.FC = () => {
+const CarruselConTexto = () => {
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1, // Una imagen visible por vez
-    slidesToScroll: 1, // Desplaza una por vez
-    autoplay: true,
-    autoplaySpeed: 3000,
-    arrows: true, // Mostrar flechas
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    prevArrow: <CustomArrow />, // Flecha izquierda personalizada
+    nextArrow: <CustomArrow />, // Flecha derecha personalizada
   };
 
   return (
-    <div className="carousel">
-      <Slider {...settings}>
-        {promotions.map((promo, index) => (
-          <div key={index} className="slide">
-            <img src={promo.image} alt={promo.title} />
-            <div className="slide-content">
-              <h2>{promo.title}</h2>
-              <p>{promo.description}</p>
-            </div>
+    <div className="container">
+      {/* Carrusel */}
+      <div className="carousel">
+        <Slider {...settings}>
+          <div>
+            <img
+              src="https://via.placeholder.com/800x400?text=Promoción+1"
+              alt="Promoción 1"
+              style={{ width: "100%", borderRadius: "10px" }}
+            />
           </div>
-        ))}
-      </Slider>
+          <div>
+            <img
+              src="https://via.placeholder.com/800x400?text=Promoción+2"
+              alt="Promoción 2"
+              style={{ width: "100%", borderRadius: "10px" }}
+            />
+          </div>
+          <div>
+            <img
+              src="https://via.placeholder.com/800x400?text=Promoción+3"
+              alt="Promoción 3"
+              style={{ width: "100%", borderRadius: "10px" }}
+            />
+          </div>
+        </Slider>
+      </div>
     </div>
   );
 };
 
-export default Carousel;
+export default CarruselConTexto;
