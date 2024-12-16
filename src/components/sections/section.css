@@ -81,9 +81,11 @@
 .section2 h2{
     width: 60%;
     height: 60px;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
     font-size: 60px;
-    font-weight: bold;
     color: #333;
     text-align: center;
     margin: -60px;
@@ -124,6 +126,9 @@
     align-items: center;
     cursor: pointer;
     font-family: 'Monteserrat', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 750;
+    font-style: normal;
 }
 
 .section2 ul li:hover{
@@ -133,12 +138,13 @@
 
 .section2 ul li svg{
     margin-right: 20px;
-    font-size: 30px;
+    font-size: 38px;
     color: yellow;
 }
 
 .section2 h3{
     font-family: 'Monteserrat', sans-serif;
+    
     font-size:30px;
     font-weight: bold;
     color: #333;
@@ -162,13 +168,19 @@
 }
 
 .title{
+    width: 60%;
+    height: 60px;
     position: fixed;
-    font-family: 'montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    text-align: center;
     color: rgb(255, 255, 255);
     position: absolute;
     margin-top: -450px;
     font-size: 70px;
-    margin-left: 450px;
+    margin-left: 300px;
 }
 
 .parrafo{
