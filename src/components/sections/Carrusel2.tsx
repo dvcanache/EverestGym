@@ -44,7 +44,7 @@ const Carousel: React.FC = () => {
   const handleScrollToSection = () => {
     const targetSection = document.getElementById("target-section");
     if (targetSection) {
-      targetSection.scrollIntoView({ behavior: "smooth" });
+      targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
 
