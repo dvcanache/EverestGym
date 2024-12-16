@@ -7,7 +7,7 @@ function Section5() {
 
         <div className = "formulario" >
             
-            <div className='formulario-title'>Contactanos !</div>
+            <div id="target-section" className='formulario-title'>Contactanos !</div>
             <div className='formulario-container'>
                 <div className='formulario-text'>
                 <form action="#" method="POST">
@@ -28,6 +28,7 @@ function Section5() {
 
                 </div>
                 <div className='formulario-text'></div>
+
                 
             </div>
             

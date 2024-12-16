@@ -1,66 +1,70 @@
 import React from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import "./Carrusel2.css";
 
-// Componente de flechas personalizadas
-const CustomArrow = ({ className, onClick }: any) => {
-  return (
-    <div
-      className={className}
-      onClick={onClick}
-      style={{
-        display: "block",
-        background: "gray",
-        borderRadius: "50%",
-        width: "30px",
-        height: "30px",
-      }}
-    />
-  );
-};
+// Tipos para las promociones
+interface Promotion {
+  image: string;
+  title: string;
+  description: string;
+}
 
-const CarruselConTexto = () => {
-  const settings = {
+// Lista de promociones
+const promotions: Promotion[] = [
+  {
+    image: "https://via.placeholder.com/800x400",
+    title: "¡50% de descuento en membresías anuales!",
+    description: "Aprovecha esta oferta por tiempo limitado.",
+  },
+  {
+    image: "https://via.placeholder.com/800x400",
+    title: "Clases de spinning gratis los sábados",
+    description: "Inscríbete y prueba nuestras clases gratuitas.",
+  },
+  {
+    image: "https://via.placeholder.com/800x400",
+    title: "Nuevo horario para yoga",
+    description: "Disfruta de yoga a las 7 PM todos los días.",
+  },
+];
+
+const Carousel: React.FC = () => {
+  // Configuración del carrusel
+  const settings: React.ComponentProps<typeof Slider> = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    prevArrow: <CustomArrow />, // Flecha izquierda personalizada
-    nextArrow: <CustomArrow />, // Flecha derecha personalizada
+    autoplay: true,
+    autoplaySpeed: 3000,
+  };
+
+  // Manejar el clic del botón
+  const handleScrollToSection = () => {
+    const targetSection = document.getElementById("target-section");
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
-    <div className="container">
-      {/* Carrusel */}
-      <div className="carousel">
-        <Slider {...settings}>
-          <div>
-            <img
-              src="https://via.placeholder.com/800x400?text=Promoción+1"
-              alt="Promoción 1"
-              style={{ width: "100%", borderRadius: "10px" }}
-            />
+    <div className="carousel">
+      <Slider {...settings}>
+        {promotions.map((promo, index) => (
+          <div key={index} className="slide">
+            <img src={promo.image} alt={promo.title} />
+            <h2>{promo.title}</h2>
+            <p>{promo.description}</p>
           </div>
-          <div>
-            <img
-              src="https://via.placeholder.com/800x400?text=Promoción+2"
-              alt="Promoción 2"
-              style={{ width: "100%", borderRadius: "10px" }}
-            />
-          </div>
-          <div>
-            <img
-              src="https://via.placeholder.com/800x400?text=Promoción+3"
-              alt="Promoción 3"
-              style={{ width: "100%", borderRadius: "10px" }}
-            />
-          </div>
-        </Slider>
-      </div>
+        ))}
+      </Slider>
+      <button className="scroll-button" style={{background:"#e9e502dc"}} onClick={handleScrollToSection}>
+        Inscribirse
+      </button>
     </div>
   );
 };
 
-export default CarruselConTexto;
+export default Carousel;
+

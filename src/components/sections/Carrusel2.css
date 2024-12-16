@@ -140,4 +140,25 @@
       font-size: 0.9rem;
     }
   }
+
+/* Estilos para el botón de desplazamiento */
+  .scroll-button {
+    margin: 20px 360px;
+    padding: 10px 20px;
+    background-color:#e9e502dc;
+    color: white; /* Color del texto */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    display: block;
+  }
+  
+  .scroll-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.2);
+  }
+
+
+  
   

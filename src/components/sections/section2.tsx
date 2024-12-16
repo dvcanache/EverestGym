@@ -1,8 +1,8 @@
 import Carrusel from "./carrusel";
 import './carrusel.css'
-import { TbKarate } from "react-icons/tb";
+import SportsMmaIcon from '@mui/icons-material/SportsMma';
 import { FaRunning } from "react-icons/fa";
-import { FaDumbbell } from "react-icons/fa";
+import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';;
 import { FaBaseballBatBall } from "react-icons/fa6";
 
 
@@ -18,9 +18,9 @@ function Section2() {
       
       <h3>Tipos de Entrenamientos Disponibles:</h3>
       <ul>
-        <li><FaDumbbell/>Sala de Pesas</li>
+        <li><FitnessCenterIcon/>Sala de Pesas</li>
         <li><FaRunning/> Area de Crossfit</li>
-        <li><TbKarate/> Area de MMA</li>
+        <li className="mma"><SportsMmaIcon/> Area de MMA</li>
         <li><FaBaseballBatBall/>Area de Beisbol</li>
       </ul>
       <div>
