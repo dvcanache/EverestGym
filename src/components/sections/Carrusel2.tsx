@@ -28,6 +28,40 @@ const promotions: Promotion[] = [
   },
 ];
 
+// Componente personalizado de flechas
+const CustomArrow = ({ className, style, onClick, isNext }: any) => {
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: "block",
+        background: "rgba(0, 0, 0, 0.5)",
+        borderRadius: "50%",
+        width: "40px",
+        height: "40px",
+        transition: "transform 0.3 ease",
+        marginLeft: "20x",
+        marginRight: "40px",
+        cursor: "pointer",
+      }}
+      onClick={onClick}
+    >
+      <span
+        style={{
+          color: "white",
+          fontSize: "20px",
+          position: "relative",
+          top: "5px",
+          left: isNext ? "12px" : "10px",
+        }}
+      >
+        {isNext ? "›" : "‹"}
+      </span>
+    </div>
+  );
+};
+
 const Carousel: React.FC = () => {
   // Configuración del carrusel
   const settings: React.ComponentProps<typeof Slider> = {
@@ -38,6 +72,8 @@ const Carousel: React.FC = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+    prevArrow: <CustomArrow isNext={false} />, // Flecha izquierda
+    nextArrow: <CustomArrow isNext={true} />, // Flecha derecha
   };
 
   // Manejar el clic del botón
@@ -59,7 +95,11 @@ const Carousel: React.FC = () => {
           </div>
         ))}
       </Slider>
-      <button className="scroll-button" style={{background:"#e9e502dc"}} onClick={handleScrollToSection}>
+      <button
+        className="scroll-button"
+        style={{ background: "#e9e502dc" }}
+        onClick={handleScrollToSection}
+      >
         Inscribirse
       </button>
     </div>
@@ -67,4 +107,3 @@ const Carousel: React.FC = () => {
 };
 
 export default Carousel;
-

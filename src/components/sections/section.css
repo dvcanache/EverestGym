@@ -70,9 +70,9 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     width: 85%;
     height: 80%;
-    padding: 110px;
+    padding: 50px;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.575);
+    background-color: rgba(0, 0, 0, 0);
     color: rgb(255, 255, 255);
     font-size: 40px;
     border-radius: 25px;
@@ -80,55 +80,45 @@
 
 .section2 h2{
     width: 60%;
-    height: 60px;
+    height: 120px;
     font-family: 'Montserrat', sans-serif;
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
     font-size: 60px;
     color: #333;
-    text-align: center;
-    margin: -60px;
     color: white;
-    margin-left: 18%;
-    padding-bottom: 0.5rem;
-    margin-bottom: 1.5rem;
+    text-align: left;
 }
 
 .section2 p{
     font-family: 'Monteserrat', sans-serif;
     font-size: 30px;
-    line-height: 1.8;
     color: white;
-    margin-top: 130px;
-    text-align: justify;
+    width: 720px;
+    margin-top: 30px;
+    text-align: left;
 }
 
 .section2 ul{
-    padding: 10px;
+    height: 370px;
+    width: 600px;
     flex-direction: column;
-    gap: 10px;
-    padding-left: 2px;
 }
 
 .section2 ul li{
     transition: transform 0.3s ease;
     border-radius: 5px;
-    width: 30%;
-    height: 60px;
-    margin-bottom: 10px;
     font-size: 40px;
     color: white;
-    position: relative;
-    padding-left: 20px;
-    list-style-type: none;
-    display: flex;
-    align-items: center;
     cursor: pointer;
     font-family: 'Monteserrat', sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 750;
-    font-style: normal;
+    font-weight: 800;
+}
+
+.section2 li {
+    margin-top: 50px;
+   
 }
 
 .section2 ul li:hover{
@@ -138,21 +128,21 @@
 
 .section2 ul li svg{
     margin-right: 20px;
-    font-size: 38px;
+    font-size: 60px;
     color: yellow;
 }
 
-.section2 h3{
+.subtitulo{
+    width: 150%;
+    height: 120px;
     font-family: 'Monteserrat', sans-serif;
-    
-    font-size:30px;
-    font-weight: bold;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size:40px;
     color: #333;
-    text-align: center;
-    margin: 20px 0;
+    margin-top: 40px;
     color: white;
-    margin-right: 50%;
-    padding: 20px;
 }
 
 .section3{

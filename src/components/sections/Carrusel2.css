@@ -84,27 +84,14 @@
     cursor: pointer;
   }
   
-  /* Esta parte se asegura de eliminar los números */
-  .slick-dots li button:before {
-    content: "•"; /* Reemplazar con punto */
-    font-size: 25px; /* Tamaño del punto */
-    color: #fff;
-    opacity: 0.5; /* Opacidad de los puntos inactivos */
-    margin: 0; /* Eliminar cualquier margen innecesario */
-  }
-  
-  /* Punto activo */
-  
   
   /* Estilo de las flechas */
   .slick-prev,
   .slick-next {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
+    z-index: 20;
     background: rgba(0, 0, 0, 0.6);
-    border-radius: 50%;
     width: 40px;
     height: 40px;
     display: flex;
@@ -146,7 +133,7 @@
     margin: 20px 360px;
     padding: 10px 20px;
     background-color:#e9e502dc;
-    color: white; /* Color del texto */
+    color: white; 
     border: none;
     border-radius: 5px;
     cursor: pointer;
