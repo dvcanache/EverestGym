@@ -1,4 +1,4 @@
-import Carrusel from "./carrusel";
+import Carrusel from "./Carrusel";
 import './carrusel.css'
 import SportsMmaIcon from '@mui/icons-material/SportsMma';
 import { FaRunning } from "react-icons/fa";

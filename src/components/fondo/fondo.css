@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 0px;
-    border-bottom: solid 20px rgba(255, 221, 0, 0.426);
+    /* border-bottom: solid 20px rgba(255, 221, 0, 0.426); */
     
     width: 100%;
     height: 1100px;
@@ -14,6 +14,13 @@
     position: relative;
     /* box-shadow: 10px 10px 100px 50px rgb(255, 242, 55); */
 }
+.fondobox.promociones{
+
+    background-color: rgb(22, 22, 22);
+
+}
+
+
 .fondobox.descripcion{
 
     background-color: rgb(22, 22, 22) ;
