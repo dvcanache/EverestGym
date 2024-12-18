@@ -13,11 +13,11 @@ function Section2() {
         <div className='section2'>
             <h2>Supera tus limites con Everest Gym</h2>
       <p>
-      ¡Hoy es el día para superar tus límites! Recuerda que cada gota de sudor es un paso más hacia tus objetivos. La clave está en la persistencia y la disciplina. No importa cuán difícil parezca, cada entrenamiento cuenta.
+      ¡Hoy es el día para superar tus límites! Recuerda que cada gota de sudor es un paso más hacia tus objetivos.
       </p>
       
-      <h3>Tipos de Entrenamientos Disponibles:</h3>
       <ul>
+      <h3 className="subtitulo">Tipos de Entrenamientos Disponibles:</h3>
         <li><FitnessCenterIcon/>Sala de Pesas</li>
         <li><FaRunning/> Area de Crossfit</li>
         <li className="mma"><SportsMmaIcon/> Area de MMA</li>
