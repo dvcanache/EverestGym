@@ -17,13 +17,13 @@ ul{
 }
 
 ul li:hover {
-    transform: scale(1.2);
-    opacity: 0.8;
+    transform: scale(1.1);
+    opacity: 1;
 }
 
 li {
     margin: 0 50px;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.2s ease-in-out;
 }
 
 a {
@@ -38,14 +38,14 @@ a {
 
 a:hover {
     color: rgb(255, 255, 41);
-    transition: color 0.5s ease, transform 0.5s ease;
-    transform: scale(1.2);
-    opacity: 0.8;
+    transition: color 0.5s ease, transform 0.2s ease;
+    transform: scale(1.1);
+    opacity: 1;
 }
 
 button{
     padding: 10px 20px;
-    background-image: linear-gradient(to right, #a3ab31, #e4ff78);
+    background-color: rgb(255, 255, 41);
     color: rgb(0, 0, 0);
     border: none;
     border-radius: 10px ;
@@ -56,13 +56,13 @@ button{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: #000000;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.2s ease-in-out;
 
 }
 button:hover {
-    transform: scale(1.2);
-    opacity: 0.8;
-    background-image: linear-gradient(to right, #555919, #94a64f);
+    transform: scale(1.1);
+    opacity: 1;
+    background-color: rgb(144, 144, 23);
 }
 
 .navstyle{

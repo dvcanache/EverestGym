@@ -21,7 +21,7 @@ function Fondo() {
                 <Section2></Section2>
                 
             </div>
-            <div className="fondobox">
+            <div className="fondobox promociones">
                 <Section3></Section3>
             </div>
             <div className="fondobox">

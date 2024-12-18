@@ -17,7 +17,7 @@ function Section4() {
                         </div>
                         <div className='testimonio-name'>Maria</div>
                     <div>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quis error consequatur, dicta dignissimos debitis?
+                    Me encanta este gimnasio. El ambiente es muy motivador y siempre hay gente entrenando. Las instalaciones son limpias y bien mantenidas.
                     </div>
                 </div>
                 <div className = "testimonios container">
@@ -26,7 +26,7 @@ function Section4() {
                     </div>
                     <div className='testimonio-name'>Sandra</div>
                     <div>
-                        Lorem ipsum dolor sit adipisicing elit. Iure quis error consequatur, dicta dignissimos debitis?
+                    Las clases grupales en este gimnasio son increíbles. He probado varias, desde yoga hasta HIIT
                     </div>
                 </div>
                 <div className = "testimonios container">
@@ -35,7 +35,7 @@ function Section4() {
                     </div>
                     <div className='testimonio-name'>Martin</div>
                     <div>
-                        Lorem ipsum dolor sit adipisicing elit. Iure quis error consequatur, dicta dignissimos debitis?
+                    Lo que más me gusta de este gimnasio son sus horarios flexibles. Puedo ir a cualquier hora del día y siempre hay espacio para entrenar
                     </div>
                 </div>
                 <div className = "testimonios container">
@@ -44,7 +44,7 @@ function Section4() {
                     </div>
                     <div className='testimonio-name'>Pedro</div>
                     <div>
-                        Lorem ipsum dolor sit adipisicing elit. Iure quis error consequatur, dicta dignissimos debitis?
+                    Este gimnasio ofrece una excelente relación calidad-precio. Las tarifas son bastante asequibles en comparación con otros lugares en la ciudad
                     </div>
                 </div>
                 <div className = "testimonios container">
@@ -53,7 +53,7 @@ function Section4() {
                     </div>
                     <div className='testimonio-name'>David</div>
                     <div>
-                        Lorem ipsum dolor sit adipisicing elit. Iure quis error consequatur, dicta dignissimos debitis?
+                        Mi parte favorita es el ambiente que es muy cheveres y acogedor
                     </div>
                 </div>
                 <div className = "testimonios container">
@@ -62,7 +62,7 @@ function Section4() {
                     </div>
                     <div className='testimonio-name'>Jose</div>
                     <div>
-                        Lorem ipsum dolor sit adipisicing elit. Iure quis error consequatur, dicta dignissimos debitis?
+                        lo que mas me gusta del gimnasio es la variedad de clases que ofrecen y la zona de spinning
                     </div>
                 </div>
             </div>
