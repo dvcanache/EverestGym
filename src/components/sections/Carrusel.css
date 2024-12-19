@@ -2,12 +2,13 @@
 
 .carousel-container {
     position: relative;
-    width: 610px;
-    margin-left: 900px;
-    margin-top: -700px;
+    width: 500px;
+    margin-left: 590px;
+    margin-top: -200px;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 5px solid rgba(255, 255, 255, 0.18);
   }
 
   .carousel-track {

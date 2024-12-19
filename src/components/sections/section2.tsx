@@ -17,13 +17,16 @@ function Section2() {
       </p>
       
       <ul>
-      <h3 className="subtitulo">Tipos de Entrenamientos Disponibles:</h3>
+      <h3 className="subtitulo">Tipos de Entrenamientos</h3>
         <li><FitnessCenterIcon/>Sala de Pesas</li>
         <li><FaRunning/> Area de Crossfit</li>
         <li className="mma"><SportsMmaIcon/> Area de MMA</li>
         <li><FaBaseballBatBall/>Area de Beisbol</li>
       </ul>
       <div>
+        <div className="zonas">
+          Zonas
+        </div>
       <Carrusel/>
       </div>
       <div>
