@@ -80,12 +80,12 @@
 
 .section2 h2{
     width: 60%;
-    height: 120px;
+    height: 90px;
     font-family: 'Montserrat', sans-serif;
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
-    font-size: 60px;
+    font-size: 40px;
     color: #333;
     color: white;
     text-align: left;
@@ -93,44 +93,63 @@
 
 .section2 p{
     font-family: 'Monteserrat', sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     color: white;
-    width: 720px;
-    margin-top: 30px;
+    width: 400px;
+    margin-top: 10px;
     text-align: left;
 }
 
 .section2 ul{
-    height: 370px;
-    width: 600px;
+    height: 100px;
+    width: 400px;
     flex-direction: column;
 }
 
 .section2 ul li{
-    transition: transform 0.3s ease;
-    border-radius: 5px;
-    font-size: 40px;
+    transition: transform 0.4s ease;
+    padding: 15px;
+    padding-left: 20px;
+    border-radius: 25px;
+    font-size: 20px;
     color: white;
     cursor: pointer;
     font-family: 'Monteserrat', sans-serif;
-    font-weight: 800;
+    font-weight: 500;
+    border: 2px solid yellow;
 }
 
 .section2 li {
-    margin-top: 50px;
+
+    margin-top: 20px;
    
 }
 
 .section2 ul li:hover{
     background-color: rgba(0, 0, 0, 0.568);
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .section2 ul li svg{
     margin-right: 20px;
-    font-size: 60px;
+    font-size: 50px;
     color: yellow;
 }
+
+.section2 h3{
+    font-size: 25px;
+    margin-left: 30px;
+}
+
+.zonas{
+    position: absolute;
+    top: 50px;
+    right: 18%;
+    font-family: 'Monteserrat', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+}
+
 
 .subtitulo{
     width: 150%;
