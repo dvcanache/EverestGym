@@ -4,9 +4,9 @@ function Section1() {
   return (
     <>
       <div className=" absolute w-full h-full flex items-center justify-center p-4">
-        <div className="flex flex-row gap-[50px] ">
-          <div className="w-[450px] flex-1 bg-black bg-opacity-75 backdrop-filter backdrop-blur-lg text-white p-6 rounded-[60px]">
-            <h1 className="text-[70px] font-bold">Everest Gym</h1>
+        <div className="flex flex-row gap-[100px]">
+          <div className="flex-1 max-w-[500px] h-[700px] bg-black bg-opacity-75 backdrop-filter backdrop-blur-[10px] text-white p-[30px] pt-[100px] rounded-[60px]">
+            <p className="text-[70px] font-bold text-nowrap">Everest Gym</p>
             <p className="text-[30px] font-bold">
               Lideres deportivos en el estado
             </p>
@@ -14,17 +14,21 @@ function Section1() {
               Un cuerpo sano es una mente sana, en EverestGym te ayudamos a
               alcanzar tus metas
             </p>
-            <button style={{ marginLeft: "30%", marginTop: "10px" }}>
-              Unirse Ahora
-            </button>
+            <div className="w-full flex justify-center pt-[25px]">
+              <button className="bg-amarillo text-black text-base font-bold text px-8 py-3 rounded">
+                Unirse Ahora
+              </button>
+            </div>
           </div>
 
-          <div className="w-[450px] h-[700px] flex-1 p-0 bg-black bg-opacity-25 backdrop-filter backdrop-blur-lg text-white  p-6 rounded-[60px]">
-            <img
-              className="object-cover w-full h-full overflow-visible"
-              src="src\imagenes\ejercicioilustrado.png"
-              alt=""
-            />
+          <div className="flex-1 max-w-[500px] h-[700px] p-0 bg-black bg-opacity-25 backdrop-filter backdrop-blur-[10px] text-white  p-6 rounded-[60px]">
+            <div>
+              <img
+                className="object-cover w-full h-full overflow-visible"
+                src="src\imagenes\ejercicioilustrado.png"
+                alt=""
+              />
+            </div>
           </div>
         </div>
         <img
