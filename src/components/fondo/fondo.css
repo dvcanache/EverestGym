@@ -1,44 +1,33 @@
-.fondobox{
-    font-family:sans-serif;
+.fondobox {
+    font-family: sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 0px;
-    /* border-bottom: solid 20px rgba(255, 221, 0, 0.426); */
-    
     width: 100%;
-    height: 1100px;
-    /* background-image: url("src/imagenes/fondo6.png"); */
+    height: 1400px;
     background-size: cover;
     align-content: center;
     position: relative;
-    /* box-shadow: 10px 10px 100px 50px rgb(255, 242, 55); */
 }
-.fondobox.promociones{
-    /* hola */
+
+.fondobox.promociones {
     background-color: rgb(22, 22, 22);
-
 }
 
-
-.fondobox.descripcion{
-
-    background-color: rgb(22, 22, 22) ;
-    /* background-image: url("src/imagenes/fondo6.png");
-    background-size: cover; */
-
-
-
+.fondobox.descripcion {
+    background-color: rgb(22, 22, 22);
 }
-.fondobox.formulario{
+
+.fondobox.formulario {
     width: 100%;
     height: 1100px;
     background-image: url("src/imagenes/fondo6.png");
     background-size: cover;
     background-size: 100% 100%;
 }
+
 .fondobox.footer {
-    
     position: absolute;
     height: 400px;
     width: 100%;
@@ -49,37 +38,123 @@
     border-bottom: solid 0px rgba(135, 56, 56, 0.426);
 }
 
-.fondoimg{
+.fondoimg {
     opacity: 100%;
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
-.circle-gradient{
+
+.circle-gradient {
     background: radial-gradient(circle, rgba(0, 0, 0, 0) 60%, rgb(0, 0, 0) 100%);
     width: 100%;
     height: 100%;
     position: absolute;
-
 }
-.gradient{
+
+.gradient {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 30px;
-    background:
-        linear-gradient(to top, rgba(0, 0, 0, 0), rgb(0, 0, 0));
-        
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), rgb(0, 0, 0));
 }
-.gradient2{
+
+.gradient2 {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 1000px;
-    background:
-        linear-gradient(to top, rgb(0, 0, 0), rgba(255, 0, 0, 0));
-        
+    background: linear-gradient(to top, rgb(0, 0, 0), rgba(255, 0, 0, 0));
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+    .fondobox {
+        height: 400px;
+    }
+
+    .fondobox.formulario {
+        height: 900px;
+    }
+
+    .fondobox.footer {
+        height: 300px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: 992px) {
+    .fondobox {
+        height: 800px;
+    }
+
+    .fondobox.formulario {
+        height: 800px;
+    }
+
+    .fondobox.footer {
+        height: 250px;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .fondobox {
+        height: 700px;
+        flex-direction: column; /* Change to column layout for smaller screens */
+    }
+
+    .fondobox.formulario {
+        height: 700px;
+    }
+
+    .fondobox.footer {
+        height: 200px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 16px;
+    }
+
+    .fondobox .textcontainer {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .fondobox img {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .fondobox {
+        height: 600px;
+    }
+
+    .fondobox.formulario {
+        height: 600px;
+    }
+
+    .fondobox.footer {
+        height: 150px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 14px;
+    }
+
+    .fondobox .textcontainer {
+        padding: 10px;
+    }
+
+    .fondobox img {
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 

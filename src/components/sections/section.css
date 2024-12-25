@@ -43,7 +43,7 @@
 }
 
 .section1.imgcontainer{
-    z-index: 20;
+    z-index: 999;
     position: relative;
     background-color: rgba(0, 0, 0, 0.25);
     height: 700px;
@@ -103,7 +103,6 @@
 .section2 ul{
     height: 100px;
     width: 400px;
-    flex-direction: column;
 }
 
 .section2 ul li{
@@ -131,7 +130,7 @@
 }
 
 .section2 ul li svg{
-    margin-right: 20px;
+    margin-right: px;
     font-size: 50px;
     color: yellow;
 }
@@ -148,7 +147,7 @@
     font-family: 'Monteserrat', sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
-}
+} 
 
 
 .subtitulo{
@@ -177,27 +176,24 @@
 }
 
 .title{
-    width: 60%;
-    height: 60px;
-    position: fixed;
+    width: 80%;
+    height: 5rem;
     font-family: 'Montserrat', sans-serif;
-    font-optical-sizing: auto;
     font-weight: 800;
-    font-style: normal;
-    text-align: center;
     color: rgb(255, 255, 255);
     position: absolute;
-    margin-top: -450px;
+    top: 5rem;
+    left: 0.1rem;
     font-size: 70px;
-    margin-left: 300px;
 }
 
 .parrafo{
     font-family: 'montserrat', sans-serif;
     color: rgb(255, 255, 255);
-    font-size: 40px;
-    margin-top: -300px;
-    margin-left: 150px;
+    font-size: 2rem;
+    top: 15rem;
+    right: 40%;
+    position: absolute;
 }
 
 .formulario{
@@ -219,7 +215,7 @@
     justify-content: space-between;
     height: 600px;
     width: 100%;
-    background-color: rgb(84, 74, 0);
+    background-color: rgba(255, 230, 0, 0.856);
     padding: 50px;
     border-radius: 30px;
 }
@@ -258,6 +254,8 @@
     /* backdrop-filter: blur(10px); */
 }
 .testimonios.container{
+    top: 0;
+    right: 50px;
     overflow: hidden;
     height: 300px;
     width: 200px;
@@ -271,7 +269,7 @@
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 30px;
-    border:3px solid rgb(218, 185, 1);
+    border:3px solid rgb(255, 230, 3);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 .testimonios-title{
@@ -344,7 +342,11 @@ input {
 }
 
 input:focus {
-    border-color: #d9ff00c1; /* Cambiar el color del borde al enfocar */
+    border-color: #fbff00; /* Cambiar el color del borde al enfocar */
     outline: none; /* Eliminar el contorno por defecto */
 }
 
+input:focus + label {
+    transform: translateY(25px);
+    color: #fbff00  ;
+}
