@@ -1,4 +1,4 @@
-import './NavBar.css'
+import "./NavBar.css";
 import { FaWhatsapp } from "react-icons/fa";
 
 
