@@ -1,11 +1,11 @@
 
-import './fondo.css';
-import Footer from '../footer/footer';
-import Section1 from '../sections/section1/section1';
-import Section2 from '../sections/section2/section2';
-import Section3 from '../sections/section3';
-import Section4 from '../sections/section4';
-import Section5 from '../sections/section5';
+import './fondo.css'
+import Footer from '../footer/footer'
+import Section1 from '../sections/section1'
+import Section2 from '../sections/section2'
+import Section3 from '../sections/section3'
+import Section4 from '../sections/section4'
+import Section5 from '../sections/section5'
 function Fondo() {
 
     return (
