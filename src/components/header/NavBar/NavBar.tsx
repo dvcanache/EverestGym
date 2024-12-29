@@ -3,7 +3,7 @@ import { FaWhatsapp } from "react-icons/fa";
 const NavBar = () => {
   return (
     <>
-      <nav className="fixed z-50 w-full bg-black text-white font-semibold flex text-2xl justify-around items-center px-4 py-4">
+      <nav className="fixed h-[80px] top-0 left-0 right-0 z-50 w-full bg-black text-white font-semibold flex text-2xl justify-around items-center px-4 py-4">
         {/* Logo */}
         <div className="w-40 cursor-pointer">
           <a href="/">
