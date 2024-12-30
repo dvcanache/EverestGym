@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./carrusel.css";
-import myImage from "../../imagenes/gym.jpg";
-import myImage2 from "../../imagenes/fondo11.jpg";
-import myImage3 from "../../imagenes/ring.png";
-import myImage4 from "../../imagenes/gym2.jpg";
+import myImage from "../../../imagenes/gym.jpg";
+import myImage2 from "../../../imagenes/fondo11.jpg";
+import myImage3 from "../../../imagenes/ring.png";
+import myImage4 from "../../../imagenes/gym2.jpg";
 
 const ImageCarousel: React.FC = () => {
   const images = [
