@@ -3,7 +3,7 @@ import { FaWhatsapp } from "react-icons/fa";
 const NavBar = () => {
   return (
     <>
-      <nav className="fixed h-[80px] top-0 left-0 right-0 z-50 w-full bg-black text-white font-semibold flex text-2xl justify-around items-center px-4 py-4 ">
+      <nav className="fixed h-[80px] top-0 left-0 right-0 z-50 w-full bg-black text-white font-semibold flex text-2xl justify-around items-center px-4 py-4 border-b-4 border-[#e9e502]  ">
         {/* Logo */}
         <div className="w-40 cursor-pointer ">
           <a href="/">
@@ -30,8 +30,10 @@ const NavBar = () => {
         {/* Botón destacado */}
           <button className="bg-amarillo text-black text-base font-bold text px-10 py-0.5 rounded hover:text-custom-hover hover:transition-all hover:duration-500 hover:ease-in-out hover:transform hover:scale-110 hover:opacity-100 hover:text-[#e9e502] ">Unirse <br />Ahora</button>
         </div>
+        
 
       </nav>
+      
     </>
   );
 };
