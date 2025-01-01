@@ -9,6 +9,9 @@ export default {
       colors: {
         'amarillo': '#fff900',
       },
+      fontFamily: {
+        oswald: ['Oswald', 'sans-serif'],
+      },
     },
   },
   plugins: [],

@@ -50,12 +50,14 @@ const ImageCarousel: React.FC = () => {
   }, [currentIndex, images.length]);
 
   return (
-    <div className="carousel-container">
+    <div className="w-full rounded-[15px] overflow-hidden shadow-[0_4px_15px_rgba(2,2,2,0.5)] border-[5px] border-[#3b3b3b]"
+>
       <div
         className="carousel-track"
         style={{
           transform: `translateX(-${currentIndex * 100}%)`,
-          transition: isTransitioning ? "transform 0.5s ease-in-out" : "none",
+          transition: isTransitioning ? "transform 1.5s ease-in-out" : "none",
+          height: "280px",
         }}
       >
         {extendedImages.map((image, index) => (
