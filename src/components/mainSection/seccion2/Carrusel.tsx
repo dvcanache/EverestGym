@@ -50,7 +50,7 @@ const ImageCarousel: React.FC = () => {
   }, [currentIndex, images.length]);
 
   return (
-    <div className="w-full rounded-[15px] overflow-hidden shadow-[0_4px_15px_rgba(2,2,2,0.5)] border-[5px] border-[#3b3b3b]"
+    <div className="w-full rounded-[15px] overflow-hidden shadow-[0_4px_15px_rgba(2,2,2,0.5)] border-none border-[#3b3b3b]"
 >
       <div
         className="carousel-track"
