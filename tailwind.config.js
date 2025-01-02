@@ -7,13 +7,22 @@ export default {
   theme: {
     extend: {
       colors: {
-        'amarillo': '#fff900',
+        'amarillo': '#fee705',
       },
       fontFamily: {
-        oswald: ['Oswald', 'sans-serif'],
+        sans: ['Oswald', 'sans-serif'],
+        oswald: ['Oswald', 'sans-serif']
       },
+
     },
+
   },
-  plugins: [],
+  plugins: [
+    function ({ addBase }) {
+      addBase({
+        '*': { fontFamily: 'Oswald, sans-serif' },
+      });
+    },
+  ],
 }
 

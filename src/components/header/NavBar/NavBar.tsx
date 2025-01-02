@@ -12,7 +12,7 @@ const NavBar = () => {
         </div>
 
         {/* Enlaces de navegación */}
-        <ul className="flex justify-between items-center space-x-24">
+        <ul className="font-sans flex justify-between items-center space-x-24">
           <li>
             <a href="/">Inicio</a>
           </li>
