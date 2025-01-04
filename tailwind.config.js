@@ -11,7 +11,8 @@ export default {
       },
       fontFamily: {
         sans: ['Oswald', 'sans-serif'],
-        oswald: ['Oswald', 'sans-serif']
+        oswald: ['Oswald', 'sans-serif'],
+        bebas: ['Bebas Neue', 'sans-serif'],
       },
 
     },
