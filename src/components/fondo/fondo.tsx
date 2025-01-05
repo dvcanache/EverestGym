@@ -22,7 +22,7 @@ function Fondo() {
                 
             </div>
             {/* divisor barra de promociones*/}
-            <div className='p-12  pl-[130px] text-left text-white font-bebas text-opacity-100 text-[66px] w-full h-auto bg-black'>
+            <div className='py-12 px-[40px] sm:px-[130px] md:text-left text-white font-bebas text-opacity-100 text-[66px] w-full h-auto bg-black'>
                 Encuentra tu plan ideal <span className='text-amarillo font-bebas'>no mas excusas.</span>
                 </div>
             <div className="fondobox promociones">

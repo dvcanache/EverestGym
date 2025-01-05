@@ -13,6 +13,7 @@ export default {
         sans: ['Oswald', 'sans-serif'],
         oswald: ['Oswald', 'sans-serif'],
         bebas: ['Bebas Neue', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],
       },
 
     },
