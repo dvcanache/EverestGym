@@ -3,7 +3,7 @@ import './fondo.css'
 import Footer from '../footer/footer'
 import Section1 from '../header/HeroSection/section1'
 import Section2 from '../mainSection/seccion2/section2'
-import Section3 from '../sections/section3'
+import Section3 from '../mainSection/section3/section3'
 import Section4 from '../sections/section4'
 import Section5 from '../sections/section5'
 function Fondo() {
@@ -21,7 +21,12 @@ function Fondo() {
                 <Section2></Section2>
                 
             </div>
+            {/* divisor barra de promociones*/}
+            <div className='py-12 px-[40px] sm:px-[130px] md:text-left text-white font-bebas text-opacity-100 text-[66px] w-full h-auto bg-black'>
+                Encuentra tu plan ideal <span className='text-amarillo font-bebas'>no mas excusas.</span>
+                </div>
             <div className="fondobox promociones">
+                {/* promociones y precios*/}
                 <Section3></Section3>
             </div>
             <div className="fondobox">
