@@ -26,6 +26,8 @@ export default {
         '*': { fontFamily: 'Oswald, sans-serif' },
       });
     },
+    require('tailwindcss-animated')
+    
   ],
 }
 
