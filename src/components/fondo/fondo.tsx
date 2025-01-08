@@ -11,11 +11,8 @@ function Fondo() {
     return (
         <div>
             
-            <div className="fondobox">
-                <div className='gradient'></div>
-                <div className='gradient2'></div>
+            <div className="fondobox hero">
                 <Section1></Section1>
-                <img className="fondoimg" src="src\imagenes\fondo1.png" alt="" />
             </div>
             <div className="fondobox descripcion">
                 <Section2></Section2>
