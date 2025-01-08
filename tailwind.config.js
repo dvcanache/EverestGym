@@ -14,6 +14,7 @@ export default {
         oswald: ['Oswald', 'sans-serif'],
         bebas: ['Bebas Neue', 'sans-serif'],
         roboto: ['Roboto', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
       },
 
     },
