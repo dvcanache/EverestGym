@@ -5,7 +5,7 @@ const ContactForm: React.FC = () => {
         <div className="w-full min-h-screen flex items-center justify-center p-4 bg-gradient-to-br from-[#1d1d1d] via-[#282828] to-[#353535]">
             <div className="flex flex-col md:flex-row max-w-6xl w-full text-white rounded-lg shadow-xl bg-gradient-to-b from-[#0e0d0d] via-[#0f0f0f] to-[#252323e5]">
                 <form className="p-6 sm:p-10 w-full md:w-1/2">
-                    <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-center md:text-left">Contáctanos</h2>
+                    <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-center md:text-left">Contácto</h2>
 
                     {/* Contenedor para Nombre y Apellido */}
                     <div className="flex flex-col sm:flex-row gap-4 mb-6">
