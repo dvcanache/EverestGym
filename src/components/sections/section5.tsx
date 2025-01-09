@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const ContactForm: React.FC = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000, // Duración de la animación en milisegundos
+        });
+    }, []);
+
     return (
-        <div className="w-full min-h-screen flex items-center justify-center p-4 bg-gradient-to-br from-[#1d1d1d] via-[#282828] to-[#353535]">
-            <div className="flex flex-col md:flex-row max-w-6xl w-full text-white rounded-lg shadow-xl bg-gradient-to-b from-[#0e0d0d] via-[#0f0f0f] to-[#252323e5]">
-                <form className="p-6 sm:p-10 w-full md:w-1/2">
-                    <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-center md:text-left">Contácto</h2>
+        <div className="w-full min-h-screen flex items-center justify-center p-4 sm:p-6 lg:p-12 bg-gradient-to-br from-[#1d1d1d] via-[#282828] to-[#353535]">
+            <div className="flex flex-col sm:flex-col md:flex-row max-w-6xl sm:max-w-10xl md:max-w-12xl w-full text-white rounded-lg shadow-xl sm:shadow-lg bg-gradient-to-b from-[#0e0d0d] via-[#0f0f0f] to-[#252323e5]">
+                <form className="sm:p-20 p-6 w-full md:w-1/2" data-aos="fade-up">
+                    <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-center md:text-left">Contáctanos</h2>
 
                     {/* Contenedor para Nombre y Apellido */}
                     <div className="flex flex-col sm:flex-row gap-4 mb-6">
@@ -16,7 +24,7 @@ const ContactForm: React.FC = () => {
                                 id="name"
                                 placeholder="Nombre"
                                 required
-                                className="w-full p-3 border border-gray-500 rounded-lg focus:outline-none focus:ring focus:ring-yellow-500  text-white"
+                                className="w-full p-3 border border-gray-500 rounded-lg focus:outline-none focus:ring focus:ring-yellow-500 text-white"
                             />
                         </div>
                         <div className="w-full sm:w-1/2">
@@ -26,7 +34,7 @@ const ContactForm: React.FC = () => {
                                 id="surname"
                                 placeholder="Apellido"
                                 required
-                                className="w-full p-3 border border-gray-500 rounded-lg focus:outline-none focus:ring focus:ring-yellow-500  text-white"
+                                className="w-full p-3 border border-gray-500 rounded-lg focus:outline-none focus:ring focus:ring-yellow-500 text-white"
                             />
                         </div>
                     </div>
@@ -48,7 +56,7 @@ const ContactForm: React.FC = () => {
                             id="phone"
                             placeholder="Número de Teléfono"
                             required
-                            className="w-full p-3 border border-gray-500 rounded-lg focus:outline-none focus:ring focus:ring-yellow-500  text-white"
+                            className="w-full p-3 border border-gray-500 rounded-lg focus:outline-none focus:ring focus:ring-yellow-500 text-white"
                         />
                     </div>
                     <button
@@ -60,7 +68,7 @@ const ContactForm: React.FC = () => {
                 </form>
 
                 {/* Imagen a la derecha del formulario */}
-                <div className="hidden md:block w-full md:w-1/2 bg-gray-200 rounded-r-lg overflow-hidden">
+                <div className="hidden md:block w-full md:w-1/2 bg-gray-200 rounded-r-lg overflow-hidden" data-aos="fade-left">
                     <img
                         src="./src/imagenes/Everest.jpg" // Cambia esta ruta por la URL de tu imagen
                         alt="Imagen de contacto"
