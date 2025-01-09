@@ -10,7 +10,7 @@ const ContactForm: React.FC = () => {
     }, []);
 
     return (
-        <div className="w-full min-h-screen flex items-center justify-center p-4 sm:p-6 lg:p-12 bg-gradient-to-br from-[#1d1d1d] via-[#282828] to-[#353535]">
+        <div className="w-full min-h-screen flex items-center justify-center p-4 sm:p-6 lg:p-12 bg-transparent">
             <div className="flex flex-col sm:flex-col md:flex-row max-w-6xl sm:max-w-10xl md:max-w-12xl w-full text-white rounded-lg shadow-xl sm:shadow-lg bg-gradient-to-b from-[#0e0d0d] via-[#0f0f0f] to-[#252323e5]">
                 <form className="sm:p-20 p-6 w-full md:w-2/3 sm:pt-0" data-aos="fade-up">
                     <div className=' w-full h-28 flex flex-col items-center justify-center'>
