@@ -12,8 +12,8 @@ const ContactForm: React.FC = () => {
     return (
         <div className="w-full min-h-screen flex items-center justify-center p-4 sm:p-6 lg:p-12 bg-gradient-to-br from-[#1d1d1d] via-[#282828] to-[#353535]">
             <div className="flex flex-col sm:flex-col md:flex-row max-w-6xl sm:max-w-10xl md:max-w-12xl w-full text-white rounded-lg shadow-xl sm:shadow-lg bg-gradient-to-b from-[#0e0d0d] via-[#0f0f0f] to-[#252323e5]">
-                <form className="sm:p-20 p-6 w-full md:w-1/2" data-aos="fade-up">
-                    <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-center md:text-left">Contáctanos</h2>
+                <form className="sm:p-20 p-6 w-full md:w-1/2 sm:pt-0" data-aos="fade-up">
+                <div className=' w-full h-28 flex flex-col items-center justify-center'><h2 className="text-2xl sm:text-3xl font-bold  text-center md:text-left">Contáctanos</h2></div>
 
                     {/* Contenedor para Nombre y Apellido */}
                     <div className="flex flex-col sm:flex-row gap-4 mb-6">
@@ -61,7 +61,7 @@ const ContactForm: React.FC = () => {
                     </div>
                     <button
                         type="submit"
-                        className="w-full flex items-center justify-center p-3 text-lg font-bold text-black bg-yellow-400 rounded-lg hover:bg-yellow-500 focus:outline-none focus:ring focus:ring-yellow-500"
+                        className="w-full flex items-center justify-center leading-none text-black text-lg font-bold rounded-none h-12 border-3 border-[#090909] transition-transform duration-300 transform skew-x-[-20deg] bg-[#fee705] hover:scale-105 "
                     >
                         Enviar
                     </button>
