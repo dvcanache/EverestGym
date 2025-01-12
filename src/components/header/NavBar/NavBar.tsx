@@ -17,6 +17,14 @@ const handleMouseEnter = (event: React.MouseEvent<HTMLLIElement>) => {
   }
 };
 
+const handleScroll = (sectionId: string) => {
+  const section = document.getElementById(sectionId );
+  section?.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  });
+};
+
 const handleMouseLeave = () => {
   if (efectoRef.current) {
     efectoRef.current.style.opacity = "0";
@@ -55,14 +63,16 @@ const handleMouseLeave = () => {
           className="hidden md:block text-sm sm:text-lg lg:text-2xl transition-all duration-500 transform border-b-transparent border-b-[3px] p-1"
           onMouseEnter={handleMouseEnter} // Agregado el evento
           onMouseLeave={handleMouseLeave} // Agregado el evento
+          onClick={() => handleScroll("section1")}
         >
-          <a href="/">Inicio</a>
+          <a href="#"  >Inicio</a>
         </li>
 
         <li
           className="hidden md:block text-sm sm:text-lg lg:text-2xl transition-all duration-500 transform border-b-transparent border-b-[3px] p-1"
           onMouseEnter={handleMouseEnter} // Agregado el evento
           onMouseLeave={handleMouseLeave} // Agregado el evento
+          onClick={() => handleScroll("section3")}
         >
           <a href="#">Planes</a>
         </li>
@@ -71,6 +81,7 @@ const handleMouseLeave = () => {
           className="hidden md:block text-sm sm:text-lg lg:text-2xl transition-all duration-500 transform border-b-transparent border-b-[3px] p-1"
           onMouseEnter={handleMouseEnter} // Agregado el evento
           onMouseLeave={handleMouseLeave} // Agregado el evento
+          onClick={() => handleScroll("section3")}
         >
           <a href="#">Contacto</a>
         </li>

@@ -3,7 +3,7 @@ import "../../sections/section.css";
 function Section1() {
   return (
     <>
-      <div className=" absolute w-full h-full flex items-center justify-center p-4">
+      <div id="section1" className=" absolute w-full h-full flex items-center justify-center p-4">
         <div className="flex flex-col md:flex-row gap-[100px]">
           <div className="flex-1 max-w-[500px] h-[700px] bg-black bg-opacity-75 backdrop-filter backdrop-blur-[10px] text-white p-[30px] pt-[100px] rounded-[60px]">
             <p className="text-[70px] font-bold text-nowrap">Everest Gym</p>

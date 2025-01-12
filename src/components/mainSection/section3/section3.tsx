@@ -1,7 +1,7 @@
 import PricingSlider from "./pricingSlider";
 function Section3 () {
   return (
-    <div className="items-center flex flex-col border-none w-[90%] lg:w-[85%] h-auto lg:h-[80%] p-[40px] lg:p-[50px] bg-transparent text-white text-[20px] lg:text-[40px] rounded-[25px]">
+    <div id="section3" className="items-center flex flex-col border-none w-[90%] lg:w-[85%] h-auto lg:h-[80%] p-[40px] lg:p-[50px] bg-transparent text-white text-[20px] lg:text-[40px] rounded-[25px]">
 
       {/* Primera columna */}
       <div className="p-[30px] backdrop-blur-sm border-[1px] rounded-[40px] flex flex-col w-full lg:w-[70%] h-auto lg:px-[30px] mb-[50px] lg:mb-0">
