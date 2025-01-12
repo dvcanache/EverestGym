@@ -16,6 +16,21 @@ export default {
         roboto: ['Roboto', 'sans-serif'],
         montserrat: ['Montserrat', 'sans-serif'],
       },
+      animation: {
+        animateBg: 'animateBg 6s linear infinite',
+      },
+      keyframes: {
+        animateBg: {
+          '0%': { backgroundPosition: '100% 0%' },
+          '100%': { backgroundPosition: '0% 0%' },
+        },
+      },
+      backgroundImage: {
+        'animated-gradient': 'linear-gradient(70deg, #000000, #000000, #0f0f0f, #000000, #000000)',
+      },
+      backgroundSize: {
+        '400x': '400% 100%',
+      },
 
     },
 
@@ -26,6 +41,8 @@ export default {
         '*': { fontFamily: 'Oswald, sans-serif' },
       });
     },
+    require('tailwindcss-animated')
+    
   ],
 }
 
