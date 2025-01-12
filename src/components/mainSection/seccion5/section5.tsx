@@ -5,7 +5,9 @@ import "aos/dist/aos.css";
 const ContactForm: React.FC = () => {
   useEffect(() => {
     AOS.init({
-      duration: 800, // Duración de la animación en milisegundos
+      duration: 800,
+      once: true,
+       // Duración de la animación en milisegundos
     });
   }, []);
 
@@ -94,7 +96,7 @@ const ContactForm: React.FC = () => {
         {/* Imagen a la derecha del formulario */}
         <div
           className="hidden lg:block w-full md:w-1/2 bg-gray-200 rounded-r-lg overflow-hidden"
-          data-aos="fade-left"
+          data-aos="fade-up"
         >
           <img
             src="./src/imagenes/Everest.jpg" // Cambia esta ruta por la URL de tu imagen
