@@ -3,13 +3,12 @@ import Footer from "../footer/footer";
 import Section1 from "../header/HeroSection/section1";
 import Section2 from "../mainSection/seccion2/section2";
 import Section3 from "../mainSection/section3/section3";
-import Section4 from "../sections/section4";
+import Section4 from "../mainSection/section4/section4";
 import Section5 from "../sections/section5";
 function Fondo() {
   return (
     <div>
       <Section1></Section1>
-
       <div className="fondobox descripcion">
         <Section2></Section2>
       </div>
@@ -22,9 +21,8 @@ function Fondo() {
         {/* promociones y precios*/}
         <Section3></Section3>
       </div>
-      <div className="fondobox">
+      <div className="fondobox entrenadores">
         <Section4></Section4>
-        <img className="fondoimg cinco" src="src\imagenes\fondo6.png" alt="" />
       </div>
       <div className="fondobox formulario">
         <Section5></Section5>

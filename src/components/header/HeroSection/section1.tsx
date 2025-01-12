@@ -4,7 +4,7 @@ const Section1 = () => {
   return (
     <>
       <div className="relative flex flex-col mt-[70px] lg:bg-black py-16 lg:pt-0 lg:flex-col lg:pb-0 ">
-        {/* Mobile background image */}
+        {/* Imagen para telefono */}
         <div
           className="absolute inset-0 z-0 lg:hidden bg-cover bg-center bg-no-repeat"
           style={{
