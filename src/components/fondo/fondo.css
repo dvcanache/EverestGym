@@ -26,7 +26,6 @@
 }
 
 .fondobox.promociones {
-
     /* hola */
     background-color: rgb(22, 22, 22);
     height: auto;
@@ -48,16 +47,6 @@
 
 
 
-}
-
-.fondobox.formulario{
-    padding: 0px;
-    width: 100%;
-    height: auto;
-    background: rgb(47, 47, 47);
-    background: linear-gradient(210deg, rgb(28 28 28) 0%, rgb(14 14 14) 50%, rgb(30 30 30) 100%);
-    background-size: cover;
-    background-size: 100% 100%;
 }
 
 .fondobox.footer {
