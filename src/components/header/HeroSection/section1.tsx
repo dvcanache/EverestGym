@@ -54,7 +54,7 @@ const Section1 = () => {
         </div>
 
         <div className="z-10 flex flex-col items-start">
-          <div className="mb-16 pl-[10%]">
+          <div className="mb-16 pl-[10%] pt-4">
             <h1 className="mb-5 text-6xl font-bold text-amarillo sm:leading-none sm:text-8xl">
               Everest
               <br />
