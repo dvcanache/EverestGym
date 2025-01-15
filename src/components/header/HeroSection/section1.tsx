@@ -8,7 +8,7 @@ const Section1 = () => {
         <div
           className="absolute inset-0 z-0 lg:hidden bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url(${heroimgs[0].src})`,
+            backgroundImage: `url(${heroimgs[1].src})`,
             filter: "brightness(0.5)",
           }}
         ></div>
@@ -32,7 +32,7 @@ const Section1 = () => {
           </svg>
           <img
             className="object-cover hidden w-full h-full lg:block lg:shadow-none lg:h-full"
-            src={heroimgs[0].src}
+            src={heroimgs[3].src}
             alt="Hero background"
           />
         </div>
