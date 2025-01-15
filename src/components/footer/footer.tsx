@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
                 </div>
 
                 {/* Sección "Contacto" */}
-                <div className="w-full sm:w-1/2 lg:w-1/3 pt-3 border-t border-yellow-500">
+                <div className="w-full sm:w-1/2 lg:w-1/3 pt-3 border-t border-amarillo">
                     <h3 className="text-lg font-bold">Contacto</h3>
                     <p className="text-sm mt-2">123 Main St, Anytown, USA</p>
                     <p className="text-sm mt-2">Phone: (123) 456-7890</p>
