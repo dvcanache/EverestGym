@@ -4,7 +4,7 @@ import Section1 from "../header/HeroSection/section1";
 import Section2 from "../mainSection/seccion2/section2";
 import Section3 from "../mainSection/section3/section3";
 import Section4 from "../mainSection/section4/section4";
-import Section5 from "../sections/section5";
+import Section5 from "../mainSection/seccion5/section5";
 function Fondo() {
   return (
     <div>
@@ -24,9 +24,7 @@ function Fondo() {
       <div className="fondobox entrenadores">
         <Section4></Section4>
       </div>
-      <div className="fondobox formulario">
         <Section5></Section5>
-      </div>
       <div className="fondobox footer">
         <Footer></Footer>
       </div>
