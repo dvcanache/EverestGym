@@ -14,6 +14,7 @@ const ContactForm: React.FC = () => {
   return (
     <div
       className="w-full  flex items-center justify-center sm:p-12 lg:p-24"
+      id="section5"
       style={{
         background:
           "linear-gradient(27deg, #080804 5px, transparent 5px) 0 5px, linear-gradient(207deg, #080804 5px, transparent 5px) 10px 0px, linear-gradient(27deg, #111 5px, transparent 5px) 0px 10px, linear-gradient(207deg, #111 5px, transparent 5px) 10px 5px, linear-gradient(90deg, #0d0d0d 10px, transparent 10px), linear-gradient(#0e0e0e 25%, #0a0a0a 25%, #0a0a0a 50%, transparent 50%, transparent 75%, #121212 75%, #121212)",

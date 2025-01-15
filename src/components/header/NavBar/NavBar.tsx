@@ -17,11 +17,12 @@ const handleMouseEnter = (event: React.MouseEvent<HTMLLIElement>) => {
   }
 };
 
-const handleScroll = (sectionId: string) => {
-  const section = document.getElementById(sectionId );
+const handleScroll = (sectionId: string, scrollEnd: ScrollLogicalPosition = "start") => {
+  
+  const section = document.getElementById(sectionId);
   section?.scrollIntoView({
     behavior: "smooth",
-    block: "start",
+    block: scrollEnd,
   });
 };
 
@@ -44,46 +45,48 @@ const handleMouseLeave = () => {
       {/* Enlaces de navegación */}
       <div className="hidden md:relative md:flex flex-row justify-around w-[40%] list-none">
 
+        {/* Efecto de hover*/}
         <div
             id="menu-efecto"
-            className="absolute bg-amarillo backdrop-blur-[10px] 
-            
+            className="
+            absolute 
+            bg-amarillo 
             left-[var(--left)] 
             top-[var(--top)] 
             w-[var(--width)] 
             h-[3px]
             transition-all 
             backdrop-filter backdrop-negative
-            duration-300 ease-in-out"
+            duration-300 ease-out"
             ref={efectoRef}
           />
         
         
         <li
-          className="hidden md:block text-sm sm:text-lg lg:text-2xl transition-all duration-500 transform border-b-transparent border-b-[3px] p-1"
+          className="cursor-pointer hidden md:block text-sm sm:text-lg lg:text-2xl transition-all duration-500 transform border-b-transparent border-b-[3px] p-1"
           onMouseEnter={handleMouseEnter} // Agregado el evento
           onMouseLeave={handleMouseLeave} // Agregado el evento
-          onClick={() => handleScroll("section1")}
+          onClick={() => handleScroll("section1","end")}
         >
-          <a href="#"  >Inicio</a>
+          <a>Inicio</a>
         </li>
 
         <li
-          className="hidden md:block text-sm sm:text-lg lg:text-2xl transition-all duration-500 transform border-b-transparent border-b-[3px] p-1"
+          className="cursor-pointer hidden md:block text-sm sm:text-lg lg:text-2xl transition-all duration-500 transform border-b-transparent border-b-[3px] p-1"
           onMouseEnter={handleMouseEnter} // Agregado el evento
           onMouseLeave={handleMouseLeave} // Agregado el evento
           onClick={() => handleScroll("section3")}
         >
-          <a href="#">Planes</a>
+          <a>Planes</a>
         </li>
 
         <li
-          className="hidden md:block text-sm sm:text-lg lg:text-2xl transition-all duration-500 transform border-b-transparent border-b-[3px] p-1"
+          className="cursor-pointer hidden md:block text-sm sm:text-lg lg:text-2xl transition-all duration-500 transform border-b-transparent border-b-[3px] p-1"
           onMouseEnter={handleMouseEnter} // Agregado el evento
           onMouseLeave={handleMouseLeave} // Agregado el evento
-          onClick={() => handleScroll("section3")}
+          onClick={() => handleScroll("section5")}
         >
-          <a href="#">Contacto</a>
+          <a>Contacto</a>
         </li>
       </div>
 
