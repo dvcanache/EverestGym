@@ -9,6 +9,12 @@ function Fondo() {
   return (
     <div>
       <Section1></Section1>
+      <div className="py-12 px-[40px] sm:px-[130px] md:text-left text-white font-bebas text-opacity-100 text-[60px] w-full h-auto bg-black">
+        La{" "}
+        <span className="text-amarillo font-bebas">diciplina{" "}</span>
+        es el puente hacia tus{" "}
+        <span className="text-amarillo font-bebas">logros.</span>
+      </div>
       <div className="fondobox descripcion">
         <Section2></Section2>
       </div>
