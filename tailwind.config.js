@@ -31,6 +31,7 @@ export default {
       backgroundSize: {
         '400x': '400% 100%',
       },
+      
 
     },
 

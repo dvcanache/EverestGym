@@ -43,7 +43,8 @@ function Section4() {
                             flex 
                             items-center 
                             content-center
-                            w-[95%] xl:h-[220px]
+                            w-[95%] 
+                            xl:h-[200px]
                             lg:max-h-[380px]
                             flex-col 
                             bg-animated-gradient bg-400x animate-animateBg
@@ -54,7 +55,7 @@ function Section4() {
                         <div className="flex flex-col lg:h-[120%] aspect-square rounded-full  items-center justify-center">
                             {/* <div className="absolute h-[100px] w-[100px] border-[5px] rounded0-full border-dotted animate-spin"> pepe</div> */}
                             <img src={row.entrenador} alt="" className="shadow-lg border-amarillo rounded-full border-[5px] h-[65%] lg:h-[100%] aspect-square" />
-                            <div className="h-0 hidden lg:block font-extrabold text-[22px] sm:text-[26px] md:text-[28px] lg:text-[30px] xl:text-[32px]">
+                            <div className="h-0 hidden lg:block font-extrabold text-sm sm:text-lg lg:text-2xl">
                                 Gero Arias
                             </div>
                         </div>
@@ -70,12 +71,9 @@ function Section4() {
                         w-[90%]
                         md:w-[70%]
                         p-7
-                        h-full
+                        h-auto
                         text-[18px] 
-                        sm:text-[24px] 
-                        md:text-[26px] 
-                        lg:text-[28px] 
-                        xl:text-[30px] 
+                        text-base md:text-lg lg:text-2xl
                         mx-6">
                             {row.text}
                         </div>
