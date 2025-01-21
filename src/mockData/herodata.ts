@@ -1,18 +1,18 @@
 const heroimgs = [
   {
-    src: "src/assets/heroSection/tiger.jpg",
+    src: "assets/heroSection/tiger.jpg",
     alt: "tigre",
   },
   {
-    src: "src/assets/heroSection/aguila.jpg",
+    src: "assets/heroSection/aguila.jpg",
     alt: "aguila",
   },
   {
-    src: "src/assets/heroSection/cheetah.jpg",
+    src: "assets/heroSection/cheetah.jpg",
     alt: "cheetah",
   },
   {
-    src: "src/assets/heroSection/lobo.jpg",
+    src: "assets/heroSection/lobo.jpg",
     alt: "lobo",
   },
 ];
