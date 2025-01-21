@@ -12,7 +12,7 @@ const Section1 = () => {
         setFade(false);
         setIndex((prevIndex) => (prevIndex + 1) % heroimgs.length);
       }, 1000);
-    }, 7000);
+    }, 5000);
     return () => clearInterval(timer);
   }, []);
 
