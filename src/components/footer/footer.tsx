@@ -14,8 +14,9 @@ const Footer: React.FC = () => {
                 </div>
 
                 {/* Logo */}
+
                 <div className="w-0 sm:w-0 lg:w-auto text-left pt-0 border-t-0 pl-0 -ml-4 mb-6 sm:mb-0 lg:mb-0 sm:ml-4">
-                    <img src="src/imagenes/everest-sinfondo.png" alt="Everest Gym Logo" />
+                    <img src="https://i.imgur.com/EUaz8qL.png" alt="Everest Gym Logo" />
                 </div>
 
                 {/* Sección "Contacto" */}

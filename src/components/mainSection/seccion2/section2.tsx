@@ -56,7 +56,7 @@ function Section2() {
 
         
         <div className="w-full rounded-[15px] overflow-hidden shadow-[0_4px_15px_rgba(2,2,2,0.5)] border-none border-[#3b3b3b]">
-          <video className="w-full" src="src\videos\videoEverest.mp4"playsInline={true} loop={true} autoPlay={true} muted={true}></video>
+          <video className="w-full" src="https://i.imgur.com/rZN9mMy.mp4"playsInline={true} loop={true} autoPlay={true} muted={true}></video>
         </div>
         <div className="font-oswald h-auto w-[80%] lg:w-[260px] m-[10px] text-center font-bold text-[20px] lg:text-[28px]">
           ZONAS

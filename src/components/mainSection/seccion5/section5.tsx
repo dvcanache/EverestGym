@@ -100,7 +100,7 @@ const ContactForm: React.FC = () => {
           data-aos="fade-up"
         >
           <img
-            src="./src/imagenes/Everest.jpg" // Cambia esta ruta por la URL de tu imagen
+            src="https://i.imgur.com/g9ur7qI.jpeg" // Cambia esta ruta por la URL de tu imagen
             alt="Imagen de contacto"
             className="h-[555px]"
           />
