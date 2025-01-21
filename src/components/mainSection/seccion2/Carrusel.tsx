@@ -20,10 +20,6 @@ const ImageCarousel: React.FC = () => {
     setCurrentIndex((prevIndex) => prevIndex + 1);
   };
 
-  const handlePrev = () => {
-    setCurrentIndex((prevIndex) => prevIndex - 1);
-  };
-
   // Cambio automático cada 3 segundos
   useEffect(() => {
     const interval = setInterval(handleNext, 3000);
