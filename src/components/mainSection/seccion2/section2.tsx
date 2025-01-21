@@ -15,10 +15,10 @@ function Section2() {
       {/* Primera columna */}
       <div className="flex flex-col justify-between w-full lg:w-[50%] h-auto lg:pr-[50px] mb-[50px] lg:mb-0">
         <div>
-          <h2 className="tracking-normal font-oswald h-auto lg:h-[90px] font-extrabold text-[36px] lg:text-[48px] text-left">
+          <h2 className="tracking-normal font-oswald h-auto lg:h-[90px] font-extrabold text-4xl lg:text-5xl text-left">
             Supera tus límites con <span className="text-amarillo">Everest Gym</span>
           </h2>
-          <p className="font-oswald font-light h-auto text-[16px] lg:text-[20px] w-full lg:w-full mt-[10px] text-left">
+          <p className="font-oswald font-light h-auto text-base md:text-lg lg:text-2xl w-full lg:w-full mt-[10px] text-left">
           ¡Hoy es el día para superar tus límites! Recuerda que cada gota de sudor es un paso más hacia tus objetivos, cada esfuerzo cuenta, y cada desafío es una oportunidad para crecer. No importa lo difícil que sea el camino
           </p>
 
@@ -27,7 +27,7 @@ function Section2() {
 
         {/* Lista de entrenamientos */}
         <div className="flex flex-col items-center mt-[10px]">
-          <h3 className="font-oswald h-auto text-[20px] lg:text-[26px] mb-[20px] mt-[20px] lg:mt-[40px] font-extrabold text-center">
+          <h3 className="font-oswald h-auto text-xl lg:text-2xl mb-[20px] mt-[20px] lg:mt-[40px] font-extrabold text-center">
             Tipos de Entrenamientos
           </h3>
           <ul className="flex flex-col items-center w-full">
@@ -39,7 +39,7 @@ function Section2() {
             ].map((item, index) => (
               <li
                 key={index}
-                className="font-oswald shadow-[0_4px_15px_rgba(255,255,255,0.5)] shadow-black bg-gradient-to-t from-[#000000] to-[#111111] hover:scale-105 transition-transform  hover:bg-opacity-75 bg-[#121212] w-full text-[18px] font-light lg:text-[24px] mt-[13px] flex flex-row items-center border-[1px] border-amarillo rounded-[15px] p-[10px] lg:p-[15px]"
+                className="text-base md:text-lg lg:text-2xl font-oswald shadow-[0_4px_15px_rgba(255,255,255,0.5)] shadow-black bg-gradient-to-t from-[#000000] to-[#111111] hover:scale-105 transition-transform hover:bg-opacity-75 bg-[#121212] w-full font-light mt-[13px] flex flex-row items-center border-[1px] border-amarillo rounded-[15px] p-[10px] lg:p-[15px]"
               >
                 <div className="flex items-center justify-center ml-[10px] h-[30px] lg:h-[40px] w-[30px] lg:w-[40px]">
                   {item.icon}

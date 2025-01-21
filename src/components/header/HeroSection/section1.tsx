@@ -44,11 +44,8 @@ const Section1 = () => {
               <br />
               Training
             </h1>
-            <p className="pr-5 mb-5 text-base text-white md:text-lg lg:max-w-md xl:max-w-lg">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
-              reiciendis aperiam quo exercitationem. Quis mollitia doloribus id
-              amet earum nisi magnam nulla? Ea, quo quos omnis impedit quaerat
-              soluta eaque.
+            <p className="pr-5 mb-5  text-white text-base md:text-lg lg:text-2xl lg:max-w-md xl:max-w-lg">
+            Desafía tus límites y transforma tu vida. En nuestro gimnasio, encontrarás las herramientas, el apoyo y la motivación para alcanzar tus metas. ¡Es momento de conquistar tus objetivos!
             </p>
             <div className="flex items-center space-x-4 pl-3 sm:space-x-8 w-[35%] min-w-[100px]">
               <button className="max-w-[180px] font-oswald font-black flex items-center justify-center leading-none no-underline text-black text-lg w-[100%] h-10 transition-[0.3s] hover:skew-x-[-13deg] skew-x-[-20deg] bg-[#fee705] rounded-[2px] border-[3px] border-transparent">
