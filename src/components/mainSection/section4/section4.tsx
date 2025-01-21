@@ -2,21 +2,21 @@ import AnimatedElement from "./animater";
 
 const rowsData = [
     {
-        entrenador: "../../../src/imagenes/entrenador4.jpg",
+        entrenador: "https://i.imgur.com/gZW42nY.jpeg",
         animation: "animate-fade-right animate-duration-[2000ms]",
         border: "border-r-[40px] lg:rounded-l-full  lg:rounded-r- rounded-r-[10px] mb-[80px]",
         flexDirection: "lg:flex-row",
         text: "Hola, soy Gero Arias, un entrenador personal certificado con más de 10 años de experiencia ayudando a personas a alcanzar sus metas de acondicionamiento físico.",
     },
     {
-        entrenador: "../../../src/imagenes/entrenador5.jpg",
+        entrenador: "https://i.imgur.com/qzMzGUS.jpeg",
         animation: "animate-fade-left animate-duration-[2000ms]",
         border: "border-l-[40px] lg:rounded-r-full rounded-l-4 rounded-l-[10px] mb-[80px] ml-[5%]",
         flexDirection: "lg:flex-row-reverse",
         text: "¡Bienvenido/a! Si estás buscando un cambio en tu vida, has llegado al lugar correcto. Como tu entrenador personal, mi misión es inspirarte y motivarte a alcanzar tus objetivos de fitness.",
     },
     {
-        entrenador: "../../../src/imagenes/entrenador6.jpg",
+        entrenador: "https://i.imgur.com/44X9Xpg.jpeg",
         animation: "animate-fade-right animate-duration-[2000ms]",
         border: "border-r-[40px] lg:rounded-l-full rounded-r-[10px]",
         flexDirection: "lg:flex-row",

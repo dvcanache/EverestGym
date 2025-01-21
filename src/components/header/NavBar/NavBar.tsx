@@ -38,7 +38,7 @@ const handleMouseLeave = () => {
       {/* Logo */}
       <div className="w-36 sm:w-40 cursor-pointer">
         <a href="/">
-          <img className="imagen" src="src/imagenes/everest.png" alt="Logo Everest" />
+          <img className="imagen" src="https://i.imgur.com/MpV9d5z.png" alt="Logo Everest" />
         </a>
       </div>
       

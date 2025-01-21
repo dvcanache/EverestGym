@@ -4,11 +4,9 @@ import './App.css'
 
 function App() {
   return (
-    <>
-        
+    <>   
         <NavBar></NavBar>
-        <Fondo></Fondo>
-        
+        <Fondo></Fondo>  
     </>
   )
 }
