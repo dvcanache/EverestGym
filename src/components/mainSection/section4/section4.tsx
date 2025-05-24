@@ -4,20 +4,20 @@ import AnimatedElement from "./animater"; // O la ruta correcta
 const cardData = [
   {
     image: "https://i.imgur.com/gZW42nY.jpeg",
-    name: "Gero Arias",
-    description: "Hola, soy Gero Arias, un entrenador personal certificado con más de 10 años de experiencia ayudando a personas a alcanzar sus metas de acondicionamiento físico.",
+    name: "Manuel Hernández",
+    description: "Hola, soy Manuel Hernández, un entrenador personal certificado con más de 10 años de experiencia ayudando a personas a alcanzar sus metas de acondicionamiento físico.",
     animationBase: "fade-right", // Usaremos esto para construir la clase de animación
   },
   {
     image: "https://i.imgur.com/qzMzGUS.jpeg",
     name: "Ana López", // Nombre de ejemplo
-    description: "¡Bienvenido/a! Si estás buscando un cambio en tu vida, has llegado al lugar correcto. Como tu entrenadora personal, mi misión es inspirarte y motivarte a alcanzar tus objetivos de fitness.",
+    description: "¡Bienvenido! Si estás buscando un cambio en tu vida, has llegado al lugar correcto. Como tu entrenadora personal, mi misión es inspirarte y motivarte a alcanzar tus objetivos de fitness.",
     animationBase: "fade-left",
   },
   {
     image: "https://i.imgur.com/44X9Xpg.jpeg",
     name: "Carlos Ruiz", // Nombre de ejemplo
-    description: "En Fitness Pro Studio, ofrecemos un enfoque integral para el entrenamiento personal. Nuestros servicios incluyen evaluaciones físicas iniciales y planes de entrenamiento personalizados.",
+    description: "En Everest Gym, ofrecemos un enfoque integral para el entrenamiento personal. Nuestros servicios incluyen evaluaciones físicas iniciales y planes de entrenamiento personalizados.",
     animationBase: "fade-right",
   },
 ];
