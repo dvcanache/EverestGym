@@ -5,4 +5,10 @@ import react from '@vitejs/plugin-react-swc'
 export default defineConfig({
   base: '/EverestGym/',
   plugins: [react()],
+  build: {
+    rollupOptions: {
+      external: ['@rollup/rollup-linux-x64-gnu']
+    }
+  }
+
 })
