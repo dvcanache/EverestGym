@@ -20,7 +20,7 @@ const ContactForm: React.FC = () => {
           "linear-gradient(27deg, #080804 5px, transparent 5px) 0 5px, linear-gradient(207deg, #080804 5px, transparent 5px) 10px 0px, linear-gradient(27deg, #111 5px, transparent 5px) 0px 10px, linear-gradient(207deg, #111 5px, transparent 5px) 10px 5px, linear-gradient(90deg, #0d0d0d 10px, transparent 10px), linear-gradient(#0e0e0e 25%, #0a0a0a 25%, #0a0a0a 50%, transparent 50%, transparent 75%, #121212 75%, #121212)",
         backgroundColor: "#0a0a0a",
         backgroundSize: "20px 20px",
-        borderTop: "13px solid #111",
+        borderTop: "",
       }}
     >
       <div className="flex flex-col text-xl md:flex-col lg:flex-row max-w-6xl sm:max-w-10xl md:w-full w-full text-white rounded-lg shadow-xl sm:shadow-lg">

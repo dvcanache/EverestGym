@@ -1,87 +1,94 @@
-import AnimatedElement from "./animater";
+// Asegúrate de que AnimatedElement esté correctamente importado
+import AnimatedElement from "./animater"; // O la ruta correcta
 
-const rowsData = [
-    {
-        entrenador: "https://i.imgur.com/gZW42nY.jpeg",
-        animation: "animate-fade-right animate-duration-[2000ms]",
-        border: "border-r-[40px] lg:rounded-l-full  lg:rounded-r- rounded-r-[10px] mb-[80px]",
-        flexDirection: "lg:flex-row",
-        text: "Hola, soy Gero Arias, un entrenador personal certificado con más de 10 años de experiencia ayudando a personas a alcanzar sus metas de acondicionamiento físico.",
-    },
-    {
-        entrenador: "https://i.imgur.com/qzMzGUS.jpeg",
-        animation: "animate-fade-left animate-duration-[2000ms]",
-        border: "border-l-[40px] lg:rounded-r-full rounded-l-4 rounded-l-[10px] mb-[80px] ml-[5%]",
-        flexDirection: "lg:flex-row-reverse",
-        text: "¡Bienvenido/a! Si estás buscando un cambio en tu vida, has llegado al lugar correcto. Como tu entrenador personal, mi misión es inspirarte y motivarte a alcanzar tus objetivos de fitness.",
-    },
-    {
-        entrenador: "https://i.imgur.com/44X9Xpg.jpeg",
-        animation: "animate-fade-right animate-duration-[2000ms]",
-        border: "border-r-[40px] lg:rounded-l-full rounded-r-[10px]",
-        flexDirection: "lg:flex-row",
-        text: "En [Nombre del Gimnasio o Estudio], ofrecemos un enfoque integral para el entrenamiento personal. Nuestros servicios incluyen evaluaciones físicas iniciales, planes de entrenamiento personalizados",
-    },
+const cardData = [
+  {
+    image: "https://i.imgur.com/gZW42nY.jpeg",
+    name: "Gero Arias",
+    description: "Hola, soy Gero Arias, un entrenador personal certificado con más de 10 años de experiencia ayudando a personas a alcanzar sus metas de acondicionamiento físico.",
+    animationBase: "fade-right", // Usaremos esto para construir la clase de animación
+  },
+  {
+    image: "https://i.imgur.com/qzMzGUS.jpeg",
+    name: "Ana López", // Nombre de ejemplo
+    description: "¡Bienvenido/a! Si estás buscando un cambio en tu vida, has llegado al lugar correcto. Como tu entrenadora personal, mi misión es inspirarte y motivarte a alcanzar tus objetivos de fitness.",
+    animationBase: "fade-left",
+  },
+  {
+    image: "https://i.imgur.com/44X9Xpg.jpeg",
+    name: "Carlos Ruiz", // Nombre de ejemplo
+    description: "En Fitness Pro Studio, ofrecemos un enfoque integral para el entrenamiento personal. Nuestros servicios incluyen evaluaciones físicas iniciales y planes de entrenamiento personalizados.",
+    animationBase: "fade-right",
+  },
 ];
-function Section4() {
 
+function ModernTrainerCards() {
+  // Definición de color (si 'amarillo' no está en tu config de Tailwind)
+  // const borderColor = 'border-yellow-400';
+  // const textColorAmarillo = 'text-yellow-400';
+  // Si 'amarillo' SÍ está definido en tailwind.config.js, usa:
+  const borderColor = 'border-amarillo';
+  const textColorAmarillo = 'text-amarillo';
 
+  return (
+    <div className="bg-transparent text-white min-h-screen py-12 px-4 sm:px-6 lg:px-8"> {/* Contenedor principal con fondo oscuro */}
+      <div className="max-w-5xl mx-auto space-y-12">
+        {cardData.map((card, index) => (
+          <AnimatedElement
+            key={card.name} // Usar un identificador único como el nombre o un ID si lo tienes
+            animationClass={`animate-${card.animationBase} animate-duration-[1500ms] animate-ease-out`}
+          >
+            <div
+              className={`
+                bg-animated-gradient bg-400x animate-animateBg 
+                 
+                rounded-xl 
+                shadow-2xl 
+                overflow-hidden 
+                md:flex 
+                ${index % 2 !== 0 ? "md:flex-row-reverse" : ""} // Alterna la dirección en pantallas medianas y grandes
+              `}
+            >
+              {/* Sección de la Imagen */}
+              <div className="md:w-2/5 md:flex-shrink-0">
+                <img
+                  src={card.image}
+                  alt={`Entrenador ${card.name}`}
+                  className="
+                    w-full h-64 object-cover 
+                    md:h-full 
+                  " // Imagen cubre el contenedor
+                />
+              </div>
 
-    return (
-        <div className="flex flex-col text-left font-serif w-full h-full px-[10px] sm:px-[70px] py-[30px] transparent text-white text-[20px] shadow-[10px_10px_100px_0px_rgba(0,0,0,0.12)]">
-            {rowsData.map((row, index) => (
-                <AnimatedElement animationClass={row.animation}>
-                    {/* tarjeta */}
-                    <div
-                        key={index}
-                        className={`
-                            text-justify
-                            border-[1px] 
-                            border-amarillo 
-                            items-evenly
-                            lg:justify-between 
-                            flex 
-                            items-center 
-                            content-center
-                            w-[95%] 
-                            xl:h-[200px]
-                            lg:max-h-[380px]
-                            flex-col 
-                            bg-animated-gradient bg-400x animate-animateBg
-                            ${row.border} 
-                            ${row.flexDirection}`}
-                    >
-                        {/* Imagen de entrenador */}
-                        <div className="flex flex-col lg:h-[120%] aspect-square rounded-full  items-center justify-center">
-                            {/* <div className="absolute h-[100px] w-[100px] border-[5px] rounded0-full border-dotted animate-spin"> pepe</div> */}
-                            <img src={row.entrenador} alt="" className="shadow-lg border-amarillo rounded-full border-[5px] h-[65%] lg:h-[100%] aspect-square" />
-                            <div className="h-0 hidden lg:block font-extrabold text-sm sm:text-lg lg:text-2xl">
-                                Gero Arias
-                            </div>
-                        </div>
-                        <div className="lg:hidden text-right relative bottom-0 font-extrabold text-[22px] sm:text-[26px] md:text-[28px] lg:text-[30px] xl:text-[32px]">
-                            Gero Arias
-                        </div>
-
-
-                        {/* Texto */}
-                        <div className="
-                        
-
-                        w-[90%]
-                        md:w-[70%]
-                        p-7
-                        h-auto
-                        text-[18px] 
-                        text-base md:text-lg lg:text-2xl
-                        mx-6">
-                            {row.text}
-                        </div>
-                    </div>
-                </AnimatedElement>
-
-            ))}
-        </div>
-    )
+              {/* Sección de Contenido */}
+              <div className="p-6 sm:p-8 flex flex-col justify-center md:w-3/5 bg  ">
+                <h3 className={`text-2xl sm:text-3xl font-bold ${textColorAmarillo} mb-3`}>
+                  {card.name}
+                </h3>
+                <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
+                  {card.description}
+                </p>
+                <button 
+                  className={`
+                    mt-6 py-2 px-6 
+                    ${borderColor} border-2 
+                    ${textColorAmarillo}
+                    font-semibold rounded-lg 
+                    hover:bg-amarillo hover:text-gray-900 
+                    transition-colors duration-300
+                    self-start  // Alinea el botón a la izquierda dentro de su contenedor flex
+                  `}
+                >
+                  Saber Más
+                </button>
+              </div>
+            </div>
+          </AnimatedElement>
+        ))}
+      </div>
+    </div>
+  );
 }
-export default Section4;
+
+export default ModernTrainerCards;
